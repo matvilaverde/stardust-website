@@ -1,16 +1,29 @@
 import React, { Component } from 'react'
+import SSLogo from './images/LogoHome.png'
+import { SocialIcon } from 'react-social-icons'
 
 class NavBar extends Component {
     render() {
         return (
-            <nav role="navigation">
-                <p class="footer__copy text--small">contato@starduststudios.com.br</p>
-                <ul class="list list--end list--media list--footer">
-                    <li><a href="http://www.facebook.com/starduststd" rel="noopener noreferrer" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="https://www.linkedin.com/company/stardust-studio" rel="noopener noreferrer" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                    <li><a href="https://twitter.com/oficialstardust/" rel="noopener noreferrer" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="https://www.instagram.com/oficialstardust/" rel="noopener noreferrer" target="_blank"><i class="fa fa-instagram"></i></a></li>
+            <nav className="navbar navbar-inverse" role="navigation">
+            <div className="container-fluid">
+                <div className="navbar-header">
+                    <a className="navbar-brand" href="home"><img src={SSLogo} alt="Stardust Studios Logo"/></a>
+                </div>
+                <ul className="nav navbar-nav">
+                    <li><a className="active" href="home">Home</a></li>
+                    <li><a href="about">About</a></li>
+                    <li><a href="portfolio">Portfolio</a></li>
+                    <li><a href="contact">Contact</a></li>
+                    <li><a href="blog">Blog</a></li>
                 </ul>
+                <ul className="nav navbar-nav navbar-right">
+                    <li><SocialIcon url="https://www.linkedin.com/company/stardust-studio" target="_blank" bgColor='white' style={{ height: 25, width: 25, 'margin-top': '35%' }} /></li>
+                    <li><SocialIcon url="http://www.facebook.com/starduststd" target="_blank" bgColor='white' style={{ height: 25, width: 25, 'margin-top': '35%'  }} /></li>
+                    <li><SocialIcon url="https://twitter.com/oficialstardust/" target="_blank" bgColor='white' style={{ height: 25, width: 25, 'margin-top': '35%'  }} /></li>
+                    <li><SocialIcon url="https://www.instagram.com/oficialstardust/" target="_blank" bgColor='white' style={{ height: 25, width: 25, 'margin-top': '35%' }} /></li>
+                </ul>
+            </div>
             </nav>
         )
     }

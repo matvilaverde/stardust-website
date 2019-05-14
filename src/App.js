@@ -9,7 +9,7 @@ function App() {
       
       {/* Go to Top button */}
       <div id="inner-nav-button">
-        <a id="nav-link" onclick href="#top"><i class="material-icons">expand_less</i></a>
+        <a id="nav-link" href="#top"><span className="glyphicon glyphicon-menu-up"></span></a>
       </div>      
     </div>
   );
