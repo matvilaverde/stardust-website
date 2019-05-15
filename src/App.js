@@ -1,9 +1,8 @@
 import React from 'react';
 import './App.css';
+import { Route, Link } from 'react-router-dom'
 import NavBar from './NavBar.js'
-import { Route } from 'react-router-dom'
-
-import dietopass from './images/dietopass/thumbnail.png'
+import Projects from './Projects.js'
 
 function App() {
   return (
@@ -14,30 +13,10 @@ function App() {
         <main>
           <h1>Welcome to<br />Stardust Studios!</h1>
           <hr />
-          <p>Com sede em Belo Horizonte, MG e integrantes em Manaus, AM,<br />a Stardust Studios é uma empresa independente focada em jogos e aplicativos únicos e criativos.</p>
+          <p>With headquarters in Belo Horizonte, MG and members in Manaus, AM,<br />Stardust Studios is an indie company focused on games and unique and creative applications.</p>
 
-          <section>
-            <div class="container">
-              <h1>Projects</h1>
-              <hr class="divider" />
-            </div>
-            <div class="row">
-              <div class="col">
-                <article class="thumbnail__container">
-                  <div class="thumbnail__inner thumbnail--portfolio">
-                    <div class="thumbnail__overlay">
-                      <div class="thumbnail__info">
-                        <h2 class="thumbnail__title">Die to Pass</h2>
-                        <p class="thumbnail__excerpt">Control an angel walking through the hospital saving souls in this captivating puzzle.</p>
-                        <a href="#dietopass" role="button">See Project</a>
-                      </div>
-                    </div>
-                    <img class="thumbnail__image" src={dietopass} alt="Die to Pass thumbnail" />
-                  </div>
-                </article>
-              </div>
-            </div>
-          </section>
+          <Projects />
+          <Link to="/portfolio"><button>Portfolio</button></Link>
         </main>
       )}/>
 
