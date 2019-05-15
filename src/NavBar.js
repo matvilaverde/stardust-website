@@ -8,14 +8,14 @@ class NavBar extends Component {
             <nav className="navbar navbar-inverse" role="navigation">
             <div className="container-fluid">
                 <div className="navbar-header">
-                    <a className="navbar-brand" href="home"><img src={SSLogo} alt="Stardust Studios Logo"/></a>
+                    <a className="navbar-brand logo" href="/"><img src={SSLogo} alt="Stardust Studios Logo"/></a>
                 </div>
                 <ul className="nav navbar-nav">
-                    <li><a className="active" href="home">Home</a></li>
-                    <li><a href="about">About</a></li>
-                    <li><a href="portfolio">Portfolio</a></li>
-                    <li><a href="contact">Contact</a></li>
-                    <li><a href="blog">Blog</a></li>
+                    <li><a className="active" href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/portfolio">Portfolio</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                    <li><a href="http://blog.starduststudios.com.br">Blog</a></li>
                 </ul>
                 <ul className="nav navbar-nav navbar-right">
                     <li><SocialIcon url="https://www.linkedin.com/company/stardust-studio" target="_blank" bgColor='white' style={{ height: 25, width: 25, 'margin-top': '35%' }} /></li>

@@ -1,8 +1,106 @@
-img {
+p, h1, h2, h3, h4, h5, h6 {
+  text-align: center
+}
+
+nav img {
   width: 100%;
   height: 200%;
   vertical-align: middle;
 }
+
+.lazy {
+  display: none;
+  visibility: hidden;
+}
+
+.divider {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  height: 1px;
+  background-color: #ddd;
+  border: 0;
+  max-width: 3rem;
+}
+
+.thumbnail__inner {
+	position: relative;
+	display: block;
+	overflow: hidden;
+	max-height: 15.8125rem;
+	height: 1635px;
+}
+
+.thumbnail__overlay {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  opacity: 0;
+  transition: opacity 0.2s cubic-bezier(0.4, 0, 1, 1); }
+  .thumbnail__overlay:focus, .thumbnail__overlay:hover, .thumbnail__overlay:active {
+    opacity: 1; }
+
+.thumbnail__info {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+  transition: all 0.2s cubic-bezier(0.4, 0, 1, 1); }
+
+.thumbnail__overlay:hover > .thumbnail__info {
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+.thumbnail__title--small {
+  font-size: 1.314rem; }
+
+.thumbnail__info hr {
+  background-color: #2196f3; }
+
+.thumbnail__excerpt {
+  padding-right: .5rem;
+  padding-left: .5rem;
+  color: #333; }
+
+.thumbnail__excerpt--small {
+  font-size: .85rem; }
+
+.thumbnail__image {
+  width: 100%; }
+
+.thumbnail--blog,
+.thumbnail--blog .thumbnail__inner {
+  overflow: hidden; }
+  @media screen and (max-width: 59.9375rem) {
+    .thumbnail--blog,
+    .thumbnail--blog .thumbnail__inner {
+      max-height: 16.875rem; } }
+  @media screen and (min-width: 60rem) {
+    .thumbnail--blog,
+    .thumbnail--blog .thumbnail__inner {
+      max-height: 12.5rem; } }
+
+.thumbnail--portfolio,
+.thumbnail--portfolio .thumbnail__inner {
+  max-height: 15.5rem; }
+  @media screen and (min-width: 30rem) {
+    .thumbnail--portfolio,
+    .thumbnail--portfolio .thumbnail__inner {
+      max-height: 19.4375rem; } }
+  @media screen and (min-width: 60rem) and (max-width: 70.9375rem) {
+    .thumbnail--portfolio,
+    .thumbnail--portfolio .thumbnail__inner {
+      max-height: 11.25rem; } }
+  @media screen and (min-width: 71rem) {
+    .thumbnail--portfolio,
+    .thumbnail--portfolio .thumbnail__inner {
+      max-height: 13.1875rem; } }
+  @media screen and (min-width: 85.375rem) {
+    .thumbnail--portfolio,
+    .thumbnail--portfolio .thumbnail__inner {
+      max-height: 15.8125rem; } }
 
 /*
     Overriding some Bootstrap for the navbar
