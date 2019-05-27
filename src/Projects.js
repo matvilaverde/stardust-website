@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 import dietopass from './images/dietopass/thumbnail.png'
 import geopedia from './images/geopedia/thumbnail.png'
@@ -21,7 +22,7 @@ class Projects extends Component {
                       <div className="thumbnail__info">
                         <h2 className="thumbnail__title">Die to Pass</h2>
                         <p className="thumbnail__excerpt">Control an angel walking through the hospital saving souls in this captivating puzzle.</p>
-                        <a href="#dietopass" role="button">See Project</a>
+                        <Link href="/projects/dietopass" role="button">See Project</Link>
                       </div>
                     </div>
                     <img className="thumbnail_image" src={dietopass} alt="Die to Pass thumbnail" />
@@ -35,7 +36,7 @@ class Projects extends Component {
                       <div className="thumbnail__info">
                         <h2 className="thumbnail__title">GeoPedia</h2>
                         <p className="thumbnail__excerpt">Guess the country with the fewest possible tips and earn more points than your friends!</p>
-                        <a href="#geopedia" role="button">See Project</a>
+                        <Link to="/projects/geopedia" role="button">See Project</Link>
                       </div>
                     </div>
                     <img className="thumbnail_image" src={geopedia} alt="GeoPedia thumbnail" />
@@ -49,7 +50,7 @@ class Projects extends Component {
                       <div className="thumbnail__info">
                         <h2 className="thumbnail__title">Aposta Fácil</h2>
                         <p className="thumbnail__excerpt">Check results from the latest raffles on your phone for the top CEF bets!</p>
-                        <a href="#apostafacil" role="button">See Project</a>
+                        <Link to="/projects/apostafacil" role="button">See Project</Link>
                       </div>
                     </div>
                     <img className="thumbnail_image" src={apostafacil} alt="Aposta Facil thumbnail" />
@@ -63,7 +64,7 @@ class Projects extends Component {
                       <div className="thumbnail__info">
                         <h2 className="thumbnail__title">Your Project Here!</h2>
                         <p className="thumbnail__excerpt">Do you want to do a project with us? Contact us and schedule a visit!</p>
-                        <a href="#contact" role="button">Get in Touch</a>
+                        <Link to="/contact" role="button">Get in Touch</Link>
                       </div>
                     </div>
                     <img className="thumbnail_image" src={yourproject} alt="Your project here thumbnail" />

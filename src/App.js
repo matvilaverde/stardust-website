@@ -20,6 +20,12 @@ function App() {
         </main>
       )}/>
 
+      <Route exact path="/portfolio" render={() => (
+        <div>
+          <h1>Portfolio!</h1>
+        </div>
+      )} />
+
       {/* Go to Top button */}
       <div id="inner-nav-button">
         <a id="nav-link" href="#top"><span className="glyphicon glyphicon-menu-up"></span></a>
