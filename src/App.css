@@ -14,12 +14,12 @@
   height: 2em;
 }
 
-li {
+.navbar li {
   float: left;
   height: 100%;
 }
 
-li a {
+.navbar li a {
   display: block;
   color: white;
   height: 100%;
@@ -28,21 +28,42 @@ li a {
   text-decoration: none;
 }
 
-li a:hover {
+.navbar li a:hover {
   background-color: #111;
 }
 
-.active {
+.navbar .active {
   background-color: #4CAF50;
   color: white;
 }
 
-.home-btn {
+.navbar .home-btn {
   margin-top: -5px;
 }
 
-.blog-btn {
+.navbar .blog-btn {
   float: right;
+}
+
+.container {
+  padding-top: 3em;
+  text-align: center;
+  align-items: center;
+}
+
+.description {
+  color: black;
+  font-size: 3vw;
+  display: block;
+  vertical-align: middle;
+  line-height: 3vw;
+}
+
+.dietopass-bg {
+  min-height: 60vw;
+  background-image: url(./images/Slide-DieToPass.png);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 @media screen and (max-width: 600px) {
