@@ -20,16 +20,27 @@ function App() {
         </main>
       )}/>
 
-      <Route exact path="/portfolio" render={() => (
+      <Route path="/about" render={() => (
         <div>
-          <h1>Portfolio!</h1>
+          <h1>About!</h1>
+          <p>There's nothing here yet, please, go back, use navbar or click this button:</p>
+          <Link to="/"><button>Send Me Home</button></Link>
         </div>
       )} />
-
-      {/* Go to Top button */}
-      <div id="inner-nav-button">
-        <a id="nav-link" href="#top"><span className="glyphicon glyphicon-menu-up"></span></a>
-      </div>      
+      <Route path="/portfolio" render={() => (
+        <div>
+          <h1>Portfolio!</h1>
+          <p>There's nothing here yet, please, go back, use navbar or click this button:</p>
+          <Link to="/"><button>Send Me Home</button></Link>
+        </div>
+      )} />
+      <Route path="/contact" render={() => (
+        <div>
+          <h1>Contact!</h1>
+          <p>There's nothing here yet, please, go back, use navbar or click this button:</p>
+          <Link to="/"><button>Send Me Home</button></Link>
+        </div>
+      )} />
     </div>
   );
 }

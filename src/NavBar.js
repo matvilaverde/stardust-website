@@ -8,7 +8,7 @@ class NavBar extends Component {
             <nav className="navbar navbar-inverse" role="navigation">
             <div className="container-fluid">
                 <div className="navbar-header">
-                    <a className="navbar-brand logo" href="/"><img src={SSLogo} alt="Stardust Studios Logo"/></a>
+                    <a className="logo" href="/"><img src={SSLogo} alt="Stardust Studios Logo"/></a>
                 </div>
                 <ul className="nav navbar-nav">
                     <li><a className="active" href="/">Home</a></li>
